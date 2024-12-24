@@ -30,6 +30,7 @@
   rotate: -25deg;
   scale: 1.0;
   animation: splash 0.75s ease-in-out infinite alternate;
+  text-shadow: 2px 2px #000A;
 }
 
 .main {
