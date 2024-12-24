@@ -20,8 +20,7 @@
         <p class="description">
           Майлан Крафт - закрытый сервер, работающий полностью на ванильном ядре
           и датапаках.<br />
-          Работает примерно с 12:00 по 22:00 МСК.<br />
-          Сервер сейчас <span class="server-online"></span>!
+          Работает примерно с 12:00 по 22:00 МСК.
         </p>
       </section>
       <section class="buttons">
@@ -51,31 +50,5 @@
         </button>
       </section>
     </main>
-    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
-    <script>
-      const onlineSpan = document.querySelector(".server-online");
-
-      MinecraftAPI.getServerStatus(
-        "oil.tplinkdns.com",
-        {
-          port: 25565, 
-        },
-        function (err, status) {
-          if (err) {
-            onlineSpan.innerHTML = "оффлайн";
-            onlineSpan.classList.add("offline");
-            return;
-          }
-
-          if (status.online) {
-            onlineSpan.innerHTML = "онлайн"
-            onlineSpan.classList.add("online");
-          } else {
-            onlineSpan.innerHTML = "оффлайн"
-            onlineSpan.classList.add("offline");
-          }
-        }
-      );
-    </script>
   </body>
 </html>
