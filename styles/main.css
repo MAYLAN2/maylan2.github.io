@@ -1,0 +1,50 @@
+.page {
+  background-image: url(../img/dirt-bg-pattern.png);
+  background-repeat: repeat;
+  font-family: "Minecraft Font";
+  color: white;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  position: relative;
+}
+
+.splash-text {
+  font-size: 32px;
+  position: absolute;
+  color: yellow;
+  right: 15px;
+  bottom: 40px;
+  rotate: -25deg;
+  scale: 1.0;
+  animation: splash 0.75s ease-in-out infinite alternate;
+}
+
+.info {
+  margin-top: 60px;
+  display: flex;
+  max-width: 800px;
+  justify-self: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.description {
+  text-align: center;
+}
+
+@keyframes splash {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
