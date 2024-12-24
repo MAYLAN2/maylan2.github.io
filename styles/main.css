@@ -21,6 +21,10 @@
   position: relative;
 }
 
+.logo {
+  width: 1024px;
+}
+
 .splash-text {
   font-size: 32px;
   position: absolute;
